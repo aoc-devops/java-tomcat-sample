@@ -1,0 +1,15 @@
+version: 0.2
+
+Env:
+phases:
+  install:
+    commands:
+      - echo "You are in install phase"
+  build:
+    commands:
+      - echo build started on 'date'
+      - mvn pakage
+
+artifacts:
+  files:
+    - '**/*'
